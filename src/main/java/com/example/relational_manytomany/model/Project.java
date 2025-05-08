@@ -16,7 +16,7 @@ public class Project {
     private String title;
 
     //Bidirectional
-    @ManyToMany(mappedBy = "projects", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @ManyToMany(mappedBy = "projects")
     private Set<Employee> employees = new HashSet<>();
 
     public Project() {}

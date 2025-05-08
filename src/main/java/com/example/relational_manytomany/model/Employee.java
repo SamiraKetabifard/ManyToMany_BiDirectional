@@ -19,8 +19,7 @@ public class Employee {
     @JoinTable(
             name = "employee_project",
             joinColumns = @JoinColumn(name = "employee_id", nullable = false),
-            inverseJoinColumns = @JoinColumn(name = "project_id")
-    )
+            inverseJoinColumns = @JoinColumn(name = "project_id"))
     private Set<Project> projects = new HashSet<>();
 
     public Employee() {}
